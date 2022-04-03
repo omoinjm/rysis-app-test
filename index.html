@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>App</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #50a3a2;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            text-align: center;
+            font-family: "Source Sans Pro", sans-serif;
+        }
+
+        div {
+            margin: 2em auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            position: relative;
+        }
+
+        input {
+            border: 1px solid rgba(252, 252, 252, 0.7);
+            background-color: rgba(252, 252, 252, 0.4);
+            outline: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            margin: 0 auto 10px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            font-weight: 300;
+        }
+
+        button {
+            appearance: none;
+            outline: 0;
+            border: 0;
+            padding: 10px 15px;
+            color: #50a3a2;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+    <div class="">
+        <input class="input-text"
+            type="text"
+            auto-complete="off"
+            placeholder="Full Name"
+            required
+        />
+        <button type="submit">Generate details</button>
+    </div>
+    <p id="username"></p>
+    <p id="password"></p>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
